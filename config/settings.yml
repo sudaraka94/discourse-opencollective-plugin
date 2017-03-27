@@ -1,0 +1,5 @@
+#This lets the admins to enable or disable the plugin functionality
+plugins:
+	open_collective_enabled;
+		default: true
+		client : true
