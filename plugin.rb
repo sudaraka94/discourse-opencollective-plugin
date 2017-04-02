@@ -1,6 +1,6 @@
 # name: discourse-opencollective-plugin
 # about: This is intended to be a feature-rich plugin for opencollective-discourse integration
-# version: 1.0.0
+# version: 0.1
 # authors: Sudaraka Jayathilaka
 # url: https://github.com/sudaraka94/discourse-opencollective-plugin.git
 
@@ -10,6 +10,8 @@
 require 'net/http'
 require 'uri'
 require 'json'
+
+register_asset "stylesheets/opencollective_admin.css"
 
 after_initialize do
 	class ::Jobs::ExampleJob < Jobs::Scheduled
